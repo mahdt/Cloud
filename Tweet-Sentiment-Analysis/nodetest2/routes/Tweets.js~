@@ -1,0 +1,4 @@
+router.get('/:id', function(req, res) {
+    var get_target = ' WHERE store_id='  + req.params.id + ' '
+    pagination(req, res, '*', 'store', get_target)
+});

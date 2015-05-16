@@ -1,0 +1,27 @@
+extends layout
+ 
+script(src="/public/javascripts/GLOBAL.js")
+
+block content
+    h1= title
+    p Welcome to our test
+
+    // Wrapper
+    #wrapper
+    Dropdown
+    span(class="caret")
+    ul(class="dropdown-menu", role="menu", aria-labelledby="dropdownMenu1")
+    li(role="presentation") a(role="menuitem", tabindex="-1", href="#") Action
+        // USER LIST
+        h2 Tweets List
+        input 
+        #userList
+            table
+                thead
+                    th TweetID
+                    th TweetText
+                    th Delete?
+                tbody
+        // /USER LIST
+
+    // /WRAPPER
